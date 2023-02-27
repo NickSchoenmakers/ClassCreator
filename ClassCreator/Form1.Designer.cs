@@ -31,6 +31,27 @@
             this.button1 = new System.Windows.Forms.Button();
             this.TXB13 = new System.Windows.Forms.TextBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Item20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TXB12 = new System.Windows.Forms.TextBox();
             this.TXB11 = new System.Windows.Forms.TextBox();
             this.TXB10 = new System.Windows.Forms.TextBox();
@@ -112,43 +133,171 @@
             this.TXB13.Location = new System.Drawing.Point(151, 371);
             this.TXB13.Name = "TXB13";
             this.TXB13.Size = new System.Drawing.Size(170, 20);
-            this.TXB13.TabIndex = 1;
+            this.TXB13.TabIndex = 14;
             // 
             // dataGridView3
             // 
+            this.dataGridView3.AllowUserToAddRows = false;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Name,
+            this.Item1,
+            this.Item2,
+            this.Item3,
+            this.Item4,
+            this.Item5,
+            this.Item6,
+            this.Item7,
+            this.Item8,
+            this.Item9,
+            this.Item10,
+            this.Item11,
+            this.Item12,
+            this.Item13,
+            this.Item14,
+            this.Item15,
+            this.Item16,
+            this.Item17,
+            this.Item18,
+            this.Item19,
+            this.Item20});
             this.dataGridView3.Location = new System.Drawing.Point(378, 59);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(687, 514);
             this.dataGridView3.TabIndex = 4;
+            // 
+            // Name
+            // 
+            this.Name.HeaderText = "Name";
+            this.Name.Name = "Name";
+            // 
+            // Item1
+            // 
+            this.Item1.HeaderText = "Item1";
+            this.Item1.Name = "Item1";
+            // 
+            // Item2
+            // 
+            this.Item2.HeaderText = "Item2";
+            this.Item2.Name = "Item2";
+            // 
+            // Item3
+            // 
+            this.Item3.HeaderText = "Item3";
+            this.Item3.Name = "Item3";
+            // 
+            // Item4
+            // 
+            this.Item4.HeaderText = "Item4";
+            this.Item4.Name = "Item4";
+            // 
+            // Item5
+            // 
+            this.Item5.HeaderText = "Item5";
+            this.Item5.Name = "Item5";
+            // 
+            // Item6
+            // 
+            this.Item6.HeaderText = "Item6";
+            this.Item6.Name = "Item6";
+            // 
+            // Item7
+            // 
+            this.Item7.HeaderText = "Item7";
+            this.Item7.Name = "Item7";
+            // 
+            // Item8
+            // 
+            this.Item8.HeaderText = "Item8";
+            this.Item8.Name = "Item8";
+            // 
+            // Item9
+            // 
+            this.Item9.HeaderText = "Item9";
+            this.Item9.Name = "Item9";
+            // 
+            // Item10
+            // 
+            this.Item10.HeaderText = "Item10";
+            this.Item10.Name = "Item10";
+            // 
+            // Item11
+            // 
+            this.Item11.HeaderText = "Item11";
+            this.Item11.Name = "Item11";
+            // 
+            // Item12
+            // 
+            this.Item12.HeaderText = "Item12";
+            this.Item12.Name = "Item12";
+            // 
+            // Item13
+            // 
+            this.Item13.HeaderText = "Item13";
+            this.Item13.Name = "Item13";
+            // 
+            // Item14
+            // 
+            this.Item14.HeaderText = "Item14";
+            this.Item14.Name = "Item14";
+            // 
+            // Item15
+            // 
+            this.Item15.HeaderText = "Item15";
+            this.Item15.Name = "Item15";
+            // 
+            // Item16
+            // 
+            this.Item16.HeaderText = "Item16";
+            this.Item16.Name = "Item16";
+            // 
+            // Item17
+            // 
+            this.Item17.HeaderText = "Item17";
+            this.Item17.Name = "Item17";
+            // 
+            // Item18
+            // 
+            this.Item18.HeaderText = "Item18";
+            this.Item18.Name = "Item18";
+            // 
+            // Item19
+            // 
+            this.Item19.HeaderText = "Item19";
+            this.Item19.Name = "Item19";
+            // 
+            // Item20
+            // 
+            this.Item20.HeaderText = "Item20";
+            this.Item20.Name = "Item20";
             // 
             // TXB12
             // 
             this.TXB12.Location = new System.Drawing.Point(151, 345);
             this.TXB12.Name = "TXB12";
             this.TXB12.Size = new System.Drawing.Size(170, 20);
-            this.TXB12.TabIndex = 5;
+            this.TXB12.TabIndex = 13;
             // 
             // TXB11
             // 
             this.TXB11.Location = new System.Drawing.Point(151, 319);
             this.TXB11.Name = "TXB11";
             this.TXB11.Size = new System.Drawing.Size(170, 20);
-            this.TXB11.TabIndex = 6;
+            this.TXB11.TabIndex = 12;
             // 
             // TXB10
             // 
             this.TXB10.Location = new System.Drawing.Point(151, 293);
             this.TXB10.Name = "TXB10";
             this.TXB10.Size = new System.Drawing.Size(170, 20);
-            this.TXB10.TabIndex = 7;
+            this.TXB10.TabIndex = 11;
             // 
             // TXB9
             // 
             this.TXB9.Location = new System.Drawing.Point(151, 267);
             this.TXB9.Name = "TXB9";
             this.TXB9.Size = new System.Drawing.Size(170, 20);
-            this.TXB9.TabIndex = 8;
+            this.TXB9.TabIndex = 10;
             // 
             // TXB8
             // 
@@ -162,56 +311,56 @@
             this.TXB7.Location = new System.Drawing.Point(151, 215);
             this.TXB7.Name = "TXB7";
             this.TXB7.Size = new System.Drawing.Size(170, 20);
-            this.TXB7.TabIndex = 10;
+            this.TXB7.TabIndex = 8;
             // 
             // TXB6
             // 
             this.TXB6.Location = new System.Drawing.Point(151, 189);
             this.TXB6.Name = "TXB6";
             this.TXB6.Size = new System.Drawing.Size(170, 20);
-            this.TXB6.TabIndex = 11;
+            this.TXB6.TabIndex = 7;
             // 
             // TXB5
             // 
             this.TXB5.Location = new System.Drawing.Point(151, 163);
             this.TXB5.Name = "TXB5";
             this.TXB5.Size = new System.Drawing.Size(170, 20);
-            this.TXB5.TabIndex = 12;
+            this.TXB5.TabIndex = 6;
             // 
             // TXB4
             // 
             this.TXB4.Location = new System.Drawing.Point(151, 137);
             this.TXB4.Name = "TXB4";
             this.TXB4.Size = new System.Drawing.Size(170, 20);
-            this.TXB4.TabIndex = 13;
+            this.TXB4.TabIndex = 5;
             // 
             // TXB3
             // 
             this.TXB3.Location = new System.Drawing.Point(151, 111);
             this.TXB3.Name = "TXB3";
             this.TXB3.Size = new System.Drawing.Size(170, 20);
-            this.TXB3.TabIndex = 14;
+            this.TXB3.TabIndex = 4;
             // 
             // TXB2
             // 
             this.TXB2.Location = new System.Drawing.Point(151, 85);
             this.TXB2.Name = "TXB2";
             this.TXB2.Size = new System.Drawing.Size(170, 20);
-            this.TXB2.TabIndex = 15;
+            this.TXB2.TabIndex = 3;
             // 
             // TXB1
             // 
             this.TXB1.Location = new System.Drawing.Point(151, 59);
             this.TXB1.Name = "TXB1";
             this.TXB1.Size = new System.Drawing.Size(170, 20);
-            this.TXB1.TabIndex = 16;
+            this.TXB1.TabIndex = 2;
             // 
             // TXBPrimairyKey
             // 
             this.TXBPrimairyKey.Location = new System.Drawing.Point(151, 12);
             this.TXBPrimairyKey.Name = "TXBPrimairyKey";
             this.TXBPrimairyKey.Size = new System.Drawing.Size(170, 20);
-            this.TXBPrimairyKey.TabIndex = 17;
+            this.TXBPrimairyKey.TabIndex = 1;
             // 
             // CMBFK1
             // 
@@ -219,7 +368,7 @@
             this.CMBFK1.Location = new System.Drawing.Point(327, 59);
             this.CMBFK1.Name = "CMBFK1";
             this.CMBFK1.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK1.TabIndex = 18;
+            this.CMBFK1.TabIndex = 100;
             // 
             // CMBFK2
             // 
@@ -227,7 +376,7 @@
             this.CMBFK2.Location = new System.Drawing.Point(327, 84);
             this.CMBFK2.Name = "CMBFK2";
             this.CMBFK2.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK2.TabIndex = 19;
+            this.CMBFK2.TabIndex = 100;
             // 
             // CMBFK3
             // 
@@ -235,7 +384,7 @@
             this.CMBFK3.Location = new System.Drawing.Point(327, 110);
             this.CMBFK3.Name = "CMBFK3";
             this.CMBFK3.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK3.TabIndex = 20;
+            this.CMBFK3.TabIndex = 100;
             // 
             // CMBFK4
             // 
@@ -243,7 +392,7 @@
             this.CMBFK4.Location = new System.Drawing.Point(327, 136);
             this.CMBFK4.Name = "CMBFK4";
             this.CMBFK4.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK4.TabIndex = 21;
+            this.CMBFK4.TabIndex = 100;
             // 
             // CMBFK5
             // 
@@ -251,7 +400,7 @@
             this.CMBFK5.Location = new System.Drawing.Point(327, 162);
             this.CMBFK5.Name = "CMBFK5";
             this.CMBFK5.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK5.TabIndex = 22;
+            this.CMBFK5.TabIndex = 100;
             // 
             // CMBFK6
             // 
@@ -259,7 +408,7 @@
             this.CMBFK6.Location = new System.Drawing.Point(327, 188);
             this.CMBFK6.Name = "CMBFK6";
             this.CMBFK6.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK6.TabIndex = 23;
+            this.CMBFK6.TabIndex = 100;
             // 
             // CMBFK7
             // 
@@ -267,7 +416,7 @@
             this.CMBFK7.Location = new System.Drawing.Point(327, 214);
             this.CMBFK7.Name = "CMBFK7";
             this.CMBFK7.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK7.TabIndex = 24;
+            this.CMBFK7.TabIndex = 100;
             // 
             // CMBFK8
             // 
@@ -275,7 +424,7 @@
             this.CMBFK8.Location = new System.Drawing.Point(327, 240);
             this.CMBFK8.Name = "CMBFK8";
             this.CMBFK8.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK8.TabIndex = 25;
+            this.CMBFK8.TabIndex = 100;
             // 
             // CMBFK9
             // 
@@ -283,7 +432,7 @@
             this.CMBFK9.Location = new System.Drawing.Point(327, 266);
             this.CMBFK9.Name = "CMBFK9";
             this.CMBFK9.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK9.TabIndex = 26;
+            this.CMBFK9.TabIndex = 100;
             // 
             // CMBFK10
             // 
@@ -291,7 +440,7 @@
             this.CMBFK10.Location = new System.Drawing.Point(327, 292);
             this.CMBFK10.Name = "CMBFK10";
             this.CMBFK10.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK10.TabIndex = 27;
+            this.CMBFK10.TabIndex = 100;
             // 
             // CMBFK11
             // 
@@ -299,7 +448,7 @@
             this.CMBFK11.Location = new System.Drawing.Point(327, 318);
             this.CMBFK11.Name = "CMBFK11";
             this.CMBFK11.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK11.TabIndex = 28;
+            this.CMBFK11.TabIndex = 100;
             // 
             // CMBFK12
             // 
@@ -307,7 +456,7 @@
             this.CMBFK12.Location = new System.Drawing.Point(327, 344);
             this.CMBFK12.Name = "CMBFK12";
             this.CMBFK12.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK12.TabIndex = 29;
+            this.CMBFK12.TabIndex = 100;
             // 
             // CMBFK13
             // 
@@ -315,7 +464,7 @@
             this.CMBFK13.Location = new System.Drawing.Point(327, 370);
             this.CMBFK13.Name = "CMBFK13";
             this.CMBFK13.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK13.TabIndex = 30;
+            this.CMBFK13.TabIndex = 100;
             // 
             // CMBType1
             // 
@@ -323,7 +472,7 @@
             this.CMBType1.Location = new System.Drawing.Point(76, 59);
             this.CMBType1.Name = "CMBType1";
             this.CMBType1.Size = new System.Drawing.Size(69, 21);
-            this.CMBType1.TabIndex = 31;
+            this.CMBType1.TabIndex = 2;
             // 
             // CMBType2
             // 
@@ -331,7 +480,7 @@
             this.CMBType2.Location = new System.Drawing.Point(76, 86);
             this.CMBType2.Name = "CMBType2";
             this.CMBType2.Size = new System.Drawing.Size(69, 21);
-            this.CMBType2.TabIndex = 32;
+            this.CMBType2.TabIndex = 3;
             // 
             // CMBType3
             // 
@@ -339,7 +488,7 @@
             this.CMBType3.Location = new System.Drawing.Point(76, 113);
             this.CMBType3.Name = "CMBType3";
             this.CMBType3.Size = new System.Drawing.Size(69, 21);
-            this.CMBType3.TabIndex = 33;
+            this.CMBType3.TabIndex = 4;
             // 
             // CMBType4
             // 
@@ -347,7 +496,7 @@
             this.CMBType4.Location = new System.Drawing.Point(76, 137);
             this.CMBType4.Name = "CMBType4";
             this.CMBType4.Size = new System.Drawing.Size(69, 21);
-            this.CMBType4.TabIndex = 34;
+            this.CMBType4.TabIndex = 5;
             // 
             // CMBType5
             // 
@@ -355,7 +504,7 @@
             this.CMBType5.Location = new System.Drawing.Point(76, 162);
             this.CMBType5.Name = "CMBType5";
             this.CMBType5.Size = new System.Drawing.Size(69, 21);
-            this.CMBType5.TabIndex = 35;
+            this.CMBType5.TabIndex = 6;
             // 
             // CMBType6
             // 
@@ -363,7 +512,7 @@
             this.CMBType6.Location = new System.Drawing.Point(76, 188);
             this.CMBType6.Name = "CMBType6";
             this.CMBType6.Size = new System.Drawing.Size(69, 21);
-            this.CMBType6.TabIndex = 36;
+            this.CMBType6.TabIndex = 7;
             // 
             // CMBType7
             // 
@@ -371,7 +520,7 @@
             this.CMBType7.Location = new System.Drawing.Point(76, 214);
             this.CMBType7.Name = "CMBType7";
             this.CMBType7.Size = new System.Drawing.Size(69, 21);
-            this.CMBType7.TabIndex = 37;
+            this.CMBType7.TabIndex = 8;
             // 
             // CMBType8
             // 
@@ -379,7 +528,7 @@
             this.CMBType8.Location = new System.Drawing.Point(76, 241);
             this.CMBType8.Name = "CMBType8";
             this.CMBType8.Size = new System.Drawing.Size(69, 21);
-            this.CMBType8.TabIndex = 38;
+            this.CMBType8.TabIndex = 9;
             // 
             // CMBType9
             // 
@@ -387,7 +536,7 @@
             this.CMBType9.Location = new System.Drawing.Point(76, 266);
             this.CMBType9.Name = "CMBType9";
             this.CMBType9.Size = new System.Drawing.Size(69, 21);
-            this.CMBType9.TabIndex = 39;
+            this.CMBType9.TabIndex = 10;
             // 
             // CMBType10
             // 
@@ -395,7 +544,7 @@
             this.CMBType10.Location = new System.Drawing.Point(76, 292);
             this.CMBType10.Name = "CMBType10";
             this.CMBType10.Size = new System.Drawing.Size(69, 21);
-            this.CMBType10.TabIndex = 40;
+            this.CMBType10.TabIndex = 11;
             // 
             // CMBType11
             // 
@@ -403,7 +552,7 @@
             this.CMBType11.Location = new System.Drawing.Point(76, 318);
             this.CMBType11.Name = "CMBType11";
             this.CMBType11.Size = new System.Drawing.Size(69, 21);
-            this.CMBType11.TabIndex = 41;
+            this.CMBType11.TabIndex = 12;
             // 
             // CMBType12
             // 
@@ -411,7 +560,7 @@
             this.CMBType12.Location = new System.Drawing.Point(76, 345);
             this.CMBType12.Name = "CMBType12";
             this.CMBType12.Size = new System.Drawing.Size(69, 21);
-            this.CMBType12.TabIndex = 42;
+            this.CMBType12.TabIndex = 13;
             // 
             // CMBType13
             // 
@@ -419,56 +568,56 @@
             this.CMBType13.Location = new System.Drawing.Point(76, 370);
             this.CMBType13.Name = "CMBType13";
             this.CMBType13.Size = new System.Drawing.Size(69, 21);
-            this.CMBType13.TabIndex = 43;
+            this.CMBType13.TabIndex = 14;
             // 
             // TXB14
             // 
             this.TXB14.Location = new System.Drawing.Point(151, 397);
             this.TXB14.Name = "TXB14";
             this.TXB14.Size = new System.Drawing.Size(170, 20);
-            this.TXB14.TabIndex = 44;
+            this.TXB14.TabIndex = 15;
             // 
             // TXB15
             // 
             this.TXB15.Location = new System.Drawing.Point(151, 423);
             this.TXB15.Name = "TXB15";
             this.TXB15.Size = new System.Drawing.Size(170, 20);
-            this.TXB15.TabIndex = 45;
+            this.TXB15.TabIndex = 16;
             // 
             // TXB16
             // 
             this.TXB16.Location = new System.Drawing.Point(151, 449);
             this.TXB16.Name = "TXB16";
             this.TXB16.Size = new System.Drawing.Size(170, 20);
-            this.TXB16.TabIndex = 46;
+            this.TXB16.TabIndex = 17;
             // 
             // TXB17
             // 
             this.TXB17.Location = new System.Drawing.Point(151, 475);
             this.TXB17.Name = "TXB17";
             this.TXB17.Size = new System.Drawing.Size(170, 20);
-            this.TXB17.TabIndex = 47;
+            this.TXB17.TabIndex = 18;
             // 
             // TXB18
             // 
             this.TXB18.Location = new System.Drawing.Point(151, 501);
             this.TXB18.Name = "TXB18";
             this.TXB18.Size = new System.Drawing.Size(170, 20);
-            this.TXB18.TabIndex = 48;
+            this.TXB18.TabIndex = 19;
             // 
             // TXB19
             // 
             this.TXB19.Location = new System.Drawing.Point(151, 527);
             this.TXB19.Name = "TXB19";
             this.TXB19.Size = new System.Drawing.Size(170, 20);
-            this.TXB19.TabIndex = 49;
+            this.TXB19.TabIndex = 20;
             // 
             // TXB20
             // 
             this.TXB20.Location = new System.Drawing.Point(151, 553);
             this.TXB20.Name = "TXB20";
             this.TXB20.Size = new System.Drawing.Size(170, 20);
-            this.TXB20.TabIndex = 50;
+            this.TXB20.TabIndex = 21;
             // 
             // CMBType14
             // 
@@ -476,7 +625,7 @@
             this.CMBType14.Location = new System.Drawing.Point(76, 396);
             this.CMBType14.Name = "CMBType14";
             this.CMBType14.Size = new System.Drawing.Size(69, 21);
-            this.CMBType14.TabIndex = 51;
+            this.CMBType14.TabIndex = 15;
             // 
             // CMBType15
             // 
@@ -484,7 +633,7 @@
             this.CMBType15.Location = new System.Drawing.Point(76, 422);
             this.CMBType15.Name = "CMBType15";
             this.CMBType15.Size = new System.Drawing.Size(69, 21);
-            this.CMBType15.TabIndex = 52;
+            this.CMBType15.TabIndex = 16;
             // 
             // CMBType16
             // 
@@ -492,7 +641,7 @@
             this.CMBType16.Location = new System.Drawing.Point(76, 449);
             this.CMBType16.Name = "CMBType16";
             this.CMBType16.Size = new System.Drawing.Size(69, 21);
-            this.CMBType16.TabIndex = 53;
+            this.CMBType16.TabIndex = 17;
             // 
             // CMBType17
             // 
@@ -500,7 +649,7 @@
             this.CMBType17.Location = new System.Drawing.Point(76, 474);
             this.CMBType17.Name = "CMBType17";
             this.CMBType17.Size = new System.Drawing.Size(69, 21);
-            this.CMBType17.TabIndex = 54;
+            this.CMBType17.TabIndex = 18;
             // 
             // CMBType18
             // 
@@ -508,7 +657,7 @@
             this.CMBType18.Location = new System.Drawing.Point(76, 501);
             this.CMBType18.Name = "CMBType18";
             this.CMBType18.Size = new System.Drawing.Size(69, 21);
-            this.CMBType18.TabIndex = 55;
+            this.CMBType18.TabIndex = 19;
             // 
             // CMBType19
             // 
@@ -516,7 +665,7 @@
             this.CMBType19.Location = new System.Drawing.Point(76, 527);
             this.CMBType19.Name = "CMBType19";
             this.CMBType19.Size = new System.Drawing.Size(69, 21);
-            this.CMBType19.TabIndex = 56;
+            this.CMBType19.TabIndex = 20;
             // 
             // CMBType20
             // 
@@ -524,7 +673,7 @@
             this.CMBType20.Location = new System.Drawing.Point(76, 552);
             this.CMBType20.Name = "CMBType20";
             this.CMBType20.Size = new System.Drawing.Size(69, 21);
-            this.CMBType20.TabIndex = 57;
+            this.CMBType20.TabIndex = 21;
             // 
             // CMBFK14
             // 
@@ -532,7 +681,7 @@
             this.CMBFK14.Location = new System.Drawing.Point(327, 396);
             this.CMBFK14.Name = "CMBFK14";
             this.CMBFK14.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK14.TabIndex = 58;
+            this.CMBFK14.TabIndex = 100;
             // 
             // CMBFK15
             // 
@@ -540,7 +689,7 @@
             this.CMBFK15.Location = new System.Drawing.Point(327, 422);
             this.CMBFK15.Name = "CMBFK15";
             this.CMBFK15.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK15.TabIndex = 59;
+            this.CMBFK15.TabIndex = 100;
             // 
             // CMBFK16
             // 
@@ -548,7 +697,7 @@
             this.CMBFK16.Location = new System.Drawing.Point(327, 449);
             this.CMBFK16.Name = "CMBFK16";
             this.CMBFK16.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK16.TabIndex = 60;
+            this.CMBFK16.TabIndex = 100;
             // 
             // CMBFK17
             // 
@@ -556,7 +705,7 @@
             this.CMBFK17.Location = new System.Drawing.Point(327, 474);
             this.CMBFK17.Name = "CMBFK17";
             this.CMBFK17.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK17.TabIndex = 61;
+            this.CMBFK17.TabIndex = 100;
             // 
             // CMBFK18
             // 
@@ -564,7 +713,7 @@
             this.CMBFK18.Location = new System.Drawing.Point(327, 501);
             this.CMBFK18.Name = "CMBFK18";
             this.CMBFK18.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK18.TabIndex = 62;
+            this.CMBFK18.TabIndex = 100;
             // 
             // CMBFK19
             // 
@@ -572,7 +721,7 @@
             this.CMBFK19.Location = new System.Drawing.Point(327, 526);
             this.CMBFK19.Name = "CMBFK19";
             this.CMBFK19.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK19.TabIndex = 63;
+            this.CMBFK19.TabIndex = 100;
             // 
             // CMBFK20
             // 
@@ -580,7 +729,7 @@
             this.CMBFK20.Location = new System.Drawing.Point(327, 553);
             this.CMBFK20.Name = "CMBFK20";
             this.CMBFK20.Size = new System.Drawing.Size(45, 21);
-            this.CMBFK20.TabIndex = 64;
+            this.CMBFK20.TabIndex = 100;
             // 
             // label1
             // 
@@ -681,7 +830,6 @@
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.TXB13);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
@@ -757,6 +905,27 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button ClassCreator;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Item20;
     }
 }
 

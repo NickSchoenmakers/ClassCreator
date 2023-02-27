@@ -15,7 +15,7 @@ namespace ClassCreator
 {
     public partial class Form1 : Form
     {
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +23,7 @@ namespace ClassCreator
             // ---------------------------------------------------------------
             // filing the CMBTType comboboxes
             CMBType1.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -32,6 +33,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType2.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -41,6 +43,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType3.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -50,6 +53,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType4.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -59,6 +63,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType5.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -68,6 +73,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType6.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -77,6 +83,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType7.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -86,6 +93,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType8.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -95,6 +103,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType9.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -104,6 +113,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType10.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -113,6 +123,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType11.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -122,6 +133,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType12.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -131,6 +143,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType13.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -140,6 +153,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType14.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -149,6 +163,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType15.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -158,6 +173,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType16.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -167,6 +183,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType17.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -176,6 +193,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType18.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -185,6 +203,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType19.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -194,6 +213,7 @@ namespace ClassCreator
                 new DataType{ Name = "dateTime" }
             };
             CMBType20.DataSource = new DataType[] {
+                new DataType{ Name = "" },
                 new DataType{ Name = "string" },
                 new DataType{ Name = "int" },
                 new DataType{ Name = "bool" },
@@ -292,133 +312,88 @@ namespace ClassCreator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            File.Delete("downloads/"+ TXBPrimairyKey.Text + ".cs");
-            using (StreamWriter file = new StreamWriter("downloads/" + TXBPrimairyKey.Text + ".cs"))
+            File.Delete("downloads/createdClasses.cs");
+            using (StreamWriter file = new StreamWriter("downloads/createdClasses.cs"))
             {
-                file.WriteLine("public " + CMBType1.Text + " " + TXB1.Text + " { get; set; }");
-                if (TXB2.Text != "")
-                {
-                    file.WriteLine("public " + CMBType2.Text + " " + TXB2.Text + " { get; set; }");
-                }
-                if (TXB3.Text != "")
-                {
-                    file.WriteLine("public " + CMBType3.Text + " " + TXB3.Text + " { get; set; }");
-                }
-                if (TXB4.Text != "")
-                {
-                    file.WriteLine("public " + CMBType4.Text + " " + TXB4.Text + " { get; set; }");
-                }
-                if (TXB5.Text != "")
-                {
-                    file.WriteLine("public " + CMBType5.Text + " " + TXB5.Text + " { get; set; }");
-                }
-                if (TXB6.Text != "")
-                {
-                    file.WriteLine("public " + CMBType6.Text + " " + TXB6.Text + " { get; set; }");
-                }
-                if (TXB7.Text != "")
-                {
-                    file.WriteLine("public " + CMBType7.Text + " " + TXB7.Text + " { get; set; }");
-                }
-                if (TXB8.Text != "")
-                {
-                    file.WriteLine("public " + CMBType8.Text + " " + TXB8.Text + " { get; set; }");
-                }
-                if (TXB9.Text != "")
-                {
-                    file.WriteLine("public " + CMBType9.Text + " " + TXB9.Text + " { get; set; }");
-                }
-                if (TXB10.Text != "")
-                {
-                    file.WriteLine("public " + CMBType10.Text + " " + TXB10.Text + " { get; set; }");
-                }
-                if (TXB11.Text != "")
-                {
-                    file.WriteLine("public " + CMBType11.Text + " " + TXB11.Text + " { get; set; }");
-                }
-                if (TXB12.Text != "")
-                {
-                    file.WriteLine("public " + CMBType12.Text + " " + TXB12.Text + " { get; set; }");
-                }
-                if (TXB13.Text != "")
-                {
-                    file.WriteLine("public " + CMBType13.Text + " " + TXB13.Text + " { get; set; }");
-                }
-                if (TXB14.Text != "")
-                {
-                    file.WriteLine("public " + CMBType14.Text + " " + TXB14.Text + " { get; set; }");
-                }
-                if (TXB15.Text != "")
-                {
-                    file.WriteLine("public " + CMBType15.Text + " " + TXB15.Text + " { get; set; }");
-                }
-                if (TXB16.Text != "")
-                {
-                    file.WriteLine("public " + CMBType16.Text + " " + TXB16.Text + " { get; set; }");
-                }
-                if (TXB17.Text != "")
-                {
-                    file.WriteLine("public " + CMBType17.Text + " " + TXB17.Text + " { get; set; }");
-                }
-                if (TXB18.Text != "")
-                {
-                    file.WriteLine("public " + CMBType18.Text + " " + TXB18.Text + " { get; set; }");
-                }
-                if (TXB19.Text != "")
-                {
-                    file.WriteLine("public " + CMBType19.Text + " " + TXB19.Text + " { get; set; }");
-                }
-                if (TXB20.Text != "")
-                {
-                    file.WriteLine("public " + CMBType20.Text + " " + TXB20.Text + " { get; set; }");
+                foreach (DataGridViewRow row in dataGridView3.Rows)
+                {   
+                    file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
+                    file.WriteLine("public " + row.Cells["Item1"].Value + " { get; set; }");
+                    if (row.Cells["Item2"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item2"].Value + " { get; set; }");
+                    if (row.Cells["Item3"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item3"].Value + " { get; set; }");
+                    if (row.Cells["Item4"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item4"].Value + " { get; set; }");
+                    if (row.Cells["Item5"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item5"].Value + " { get; set; }");
+                    if (row.Cells["Item6"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item6"].Value + " { get; set; }");
+                    if (row.Cells["Item7"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item7"].Value + " { get; set; }");
+                    if (row.Cells["Item8"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item8"].Value + " { get; set; }");
+                    if (row.Cells["Item9"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item9"].Value + " { get; set; }");
+                    if (row.Cells["Item10"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item10"].Value + " { get; set; }");
+                    if (row.Cells["Item11"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item11"].Value + " { get; set; }");
+                    if (row.Cells["Item12"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item12"].Value + " { get; set; }");
+                    if (row.Cells["Item13"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item13"].Value + " { get; set; }");
+                    if (row.Cells["Item14"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item14"].Value + " { get; set; }");
+                    if (row.Cells["Item15"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item15"].Value + " { get; set; }");
+                    if (row.Cells["Item16"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item16"].Value + " { get; set; }");
+                    if (row.Cells["Item17"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item17"].Value + " { get; set; }");
+                    if (row.Cells["Item18"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item18"].Value + " { get; set; }");
+                    if (row.Cells["Item19"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item19"].Value + " { get; set; }");
+                    if (row.Cells["Item20"].Value.ToString() != " ")
+                        file.WriteLine("public " + row.Cells["Item20"].Value + " { get; set; }");
+                    file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
                 }
             }
         }
+        int counter = 1;
         private void ClassCreator_Click(object sender, EventArgs e)
         {
             if (TXBPrimairyKey.Text != "" && CMBType1.Text != "")
             {
-                List<Classes> Classes = new List<Classes>();
-                Classes data = new Classes();
-                data.Name = TXBPrimairyKey.Text;
-                data.Item1 = CMBType1.Text + "_" + TXB1.Text;
-                data.Item2 = CMBType2.Text + "_" + TXB2.Text;
-                data.Item3 = CMBType3.Text + "_" + TXB3.Text;
-                Classes.Add(data);
-                dataGridView3.DataSource = Classes;
+                this.dataGridView3.Rows.Add(TXBPrimairyKey.Text,
+                    CMBType1.Text + " " + TXB1.Text,
+                    CMBType2.Text + " " + TXB2.Text,
+                    CMBType3.Text + " " + TXB3.Text,
+                    CMBType4.Text + " " + TXB4.Text,
+                    CMBType5.Text + " " + TXB5.Text,
+                    CMBType6.Text + " " + TXB6.Text,
+                    CMBType7.Text + " " + TXB7.Text,
+                    CMBType8.Text + " " + TXB8.Text, 
+                    CMBType9.Text + " " + TXB9.Text, 
+                    CMBType10.Text + " " + TXB10.Text, 
+                    CMBType11.Text + " " + TXB11.Text,
+                    CMBType12.Text + " " + TXB12.Text, 
+                    CMBType13.Text + " " + TXB13.Text, 
+                    CMBType14.Text + " " + TXB14.Text, 
+                    CMBType15.Text + " " + TXB15.Text, 
+                    CMBType16.Text + " " + TXB16.Text, 
+                    CMBType17.Text + " " + TXB17.Text, 
+                    CMBType18.Text + " " + TXB18.Text, 
+                    CMBType19.Text + " " + TXB19.Text,
+                    CMBType20.Text + " " + TXB20.Text);
+                dataGridView3.Update();
+                dataGridView3.Refresh();
+                counter++;
             }
             else 
             {
                 MessageBox.Show("please give a value to the first and second textboxes");
-            }
-
-        }
-        public class Classes
-        {
-            public string Name { get; set; }
-            public string Item1 { get; set; } = null;
-            public string Item2 { get; set; } = null;
-            public string Item3 { get; set; } = null;
-            public string Item4 { get; set; } = null;
-            public string Item5 { get; set; } = null;
-            public string Item6 { get; set; } = null;
-            public string Item7 { get; set; } = null; 
-            public string Item8 { get; set; } = null;
-            public string Item9 { get; set; } = null;
-            public string Item10 { get; set; } = null;
-            public string Item11 { get; set; } = null;
-            public string Item12 { get; set; } = null;
-            public string Item13 { get; set; } = null;
-            public string Item14 { get; set; } = null;
-            public string Item15 { get; set; } = null;
-            public string Item16 { get; set; } = null;
-            public string Item17 { get; set; } = null;
-            public string Item18 { get; set; } = null; 
-            public string Item19 { get; set; } = null;
-            public string Item20 { get; set; } = null;
-            public override string ToString()
-            {
-                return Name;
             }
         }
         public class DataType
