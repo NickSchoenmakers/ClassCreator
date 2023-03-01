@@ -248,7 +248,7 @@ namespace ClassCreator
             // ---------------------------------------------------------------
             // ---------------------------------------------------------------
             // filing the CMBTType comboboxes
-            CMBFK1.Items.Add("");
+            CMBFK1.Items.Add("lokjhgfds");
             CMBFK2.Items.Add("");
             CMBFK3.Items.Add("");
             CMBFK4.Items.Add("");
@@ -266,8 +266,8 @@ namespace ClassCreator
             CMBFK16.Items.Add("");
             CMBFK17.Items.Add("");
             CMBFK18.Items.Add("");
-            CMBFK19.Items.Add("");
-            CMBFK20.Items.Add("");
+            CMBFK19.Items.Add("1");
+            CMBFK20.Items.Add("1");
             // ---------------------------------------------------------------
             // ---------------------------------------------------------------
             // filing the CMBTType comboboxes
@@ -354,24 +354,29 @@ namespace ClassCreator
             // ---------------------------------------------------------------
             // ---------------------------------------------------------------  
         }
-        private void AddItem(object item, StreamWriter file)
+        int stuff = 0;
+        private void AddItem(object item, StreamWriter file, int FKLengthv2)
         {
             // idea for a method came from Adam Grygoruk
             // https://www.linkedin.com/in/adam-grygoruk-b60030265/
-            if (item.ToString().Contains("FK"))
+            string[] words = item.ToString().Split(' ');
+            if (stuff == 0)
             {
-                file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 4) + " { get; set; }");
+                Console.WriteLine(item.ToString().Remove(item.ToString().Length - 5) + "fk");
+                file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 5) + " { get; set; } = fk;");
             }
             else if (item.ToString().Contains("Null"))
             {
-                file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 4) + " { get; set; } = null;");
+                Console.WriteLine("gadihjasgbgewbg");
+                file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 5) + " { get; set; } = null;");
             }
             else if(item.ToString() != "  ")
             {
                 file.WriteLine("public " + item + " { get; set; }");
             }
         }
-            
+
+        int FKLengthv2 = 0;
         private void button1_Click(object sender, EventArgs e)
         {
             File.Delete("downloads/createdClasses.cs");
@@ -382,27 +387,36 @@ namespace ClassCreator
                 {
                     file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
                     file.WriteLine("public int Id { get; set; }");
+                    string[] words = row.Cells["Item001"].Value.ToString().Split(' ');
+                    if (words[3].Length != 0)
+                    {
+                        FKLengthv2 = words[3].ToString().Length;
+                    }
+                    else 
+                    {
+                        FKLengthv2 = 0;
+                    }
                     
-                    AddItem(row.Cells["Item001"].Value, file);
-                    AddItem(row.Cells["Item002"].Value, file);
-                    AddItem(row.Cells["Item003"].Value, file);
-                    AddItem(row.Cells["Item004"].Value, file);
-                    AddItem(row.Cells["Item005"].Value, file);
-                    AddItem(row.Cells["Item006"].Value, file);
-                    AddItem(row.Cells["Item007"].Value, file);
-                    AddItem(row.Cells["Item008"].Value, file);
-                    AddItem(row.Cells["Item009"].Value, file);
-                    AddItem(row.Cells["Item010"].Value, file);
-                    AddItem(row.Cells["Item011"].Value, file);
-                    AddItem(row.Cells["Item012"].Value, file);
-                    AddItem(row.Cells["Item013"].Value, file);
-                    AddItem(row.Cells["Item014"].Value, file);
-                    AddItem(row.Cells["Item015"].Value, file);
-                    AddItem(row.Cells["Item016"].Value, file);
-                    AddItem(row.Cells["Item017"].Value, file);
-                    AddItem(row.Cells["Item018"].Value, file);
-                    AddItem(row.Cells["Item019"].Value, file);
-                    AddItem(row.Cells["Item020"].Value, file);
+                    AddItem(row.Cells["Item001"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item002"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item003"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item004"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item005"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item006"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item007"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item008"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item009"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item010"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item011"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item012"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item013"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item014"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item015"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item016"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item017"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item018"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item019"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item020"].Value, file, FKLengthv2);
 
                     file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
                 }
@@ -412,28 +426,27 @@ namespace ClassCreator
         {
             if (TXBPrimairyKey.Text != "" && CMBType1.Text != "")
             {
-                Console.WriteLine(CMBType1.Text + " " + TXB1.Text + " " + CMBNullable1.Text);
                 this.DGVClasses.Rows.Add(TXBPrimairyKey.Text,
-                    CMBType1.Text + " " + TXB1.Text + " " + CMBNullable1.Text,
-                    CMBType2.Text + " " + TXB2.Text + " " + CMBNullable2.Text,
-                    CMBType3.Text + " " + TXB3.Text + " " + CMBNullable3.Text,
-                    CMBType4.Text + " " + TXB4.Text + " " + CMBNullable4.Text,
-                    CMBType5.Text + " " + TXB5.Text + " " + CMBNullable5.Text,
-                    CMBType6.Text + " " + TXB6.Text + " " + CMBNullable6.Text,
-                    CMBType7.Text + " " + TXB7.Text + " " + CMBNullable7.Text,
-                    CMBType8.Text + " " + TXB8.Text + " " + CMBNullable8.Text, 
-                    CMBType9.Text + " " + TXB9.Text + " " + CMBNullable9.Text, 
-                    CMBType10.Text + " " + TXB10.Text + " " + CMBNullable10.Text, 
-                    CMBType11.Text + " " + TXB11.Text + " " + CMBNullable11.Text,
-                    CMBType12.Text + " " + TXB12.Text + " " + CMBNullable12.Text, 
-                    CMBType13.Text + " " + TXB13.Text + " " + CMBNullable13.Text, 
-                    CMBType14.Text + " " + TXB14.Text + " " + CMBNullable14.Text, 
-                    CMBType15.Text + " " + TXB15.Text + " " + CMBNullable15.Text, 
-                    CMBType16.Text + " " + TXB16.Text + " " + CMBNullable16.Text, 
-                    CMBType17.Text + " " + TXB17.Text + " " + CMBNullable17.Text, 
-                    CMBType18.Text + " " + TXB18.Text + " " + CMBNullable18.Text, 
-                    CMBType19.Text + " " + TXB19.Text + " " + CMBNullable19.Text,
-                    CMBType20.Text + " " + TXB20.Text + " " + CMBNullable20.Text);
+                    CMBType1.Text + " " + TXB1.Text + " " + CMBNullable1.Text + " " + CMBFK1.Text,
+                    CMBType2.Text + " " + TXB2.Text + " " + CMBNullable2.Text + " " + CMBFK2.Text,
+                    CMBType3.Text + " " + TXB3.Text + " " + CMBNullable3.Text + " " + CMBFK3.Text,
+                    CMBType4.Text + " " + TXB4.Text + " " + CMBNullable4.Text + " " + CMBFK4.Text,
+                    CMBType5.Text + " " + TXB5.Text + " " + CMBNullable5.Text + " " + CMBFK5.Text,
+                    CMBType6.Text + " " + TXB6.Text + " " + CMBNullable6.Text + " " + CMBFK6.Text,
+                    CMBType7.Text + " " + TXB7.Text + " " + CMBNullable7.Text + " " + CMBFK7.Text,
+                    CMBType8.Text + " " + TXB8.Text + " " + CMBNullable8.Text + " " + CMBFK8.Text,
+                    CMBType9.Text + " " + TXB9.Text + " " + CMBNullable9.Text + " " + CMBFK9.Text,
+                    CMBType10.Text + " " + TXB10.Text + " " + CMBNullable10.Text + " " + CMBFK10.Text,
+                    CMBType11.Text + " " + TXB11.Text + " " + CMBNullable11.Text + " " + CMBFK11.Text,
+                    CMBType12.Text + " " + TXB12.Text + " " + CMBNullable12.Text + " " + CMBFK12.Text,
+                    CMBType13.Text + " " + TXB13.Text + " " + CMBNullable13.Text + " " + CMBFK13.Text,
+                    CMBType14.Text + " " + TXB14.Text + " " + CMBNullable14.Text + " " + CMBFK14.Text,
+                    CMBType15.Text + " " + TXB15.Text + " " + CMBNullable15.Text + " " + CMBFK15.Text,
+                    CMBType16.Text + " " + TXB16.Text + " " + CMBNullable16.Text + " " + CMBFK16.Text,
+                    CMBType17.Text + " " + TXB17.Text + " " + CMBNullable17.Text + " " + CMBFK17.Text,
+                    CMBType18.Text + " " + TXB18.Text + " " + CMBNullable18.Text + " " + CMBFK18.Text,
+                    CMBType19.Text + " " + TXB19.Text + " " + CMBNullable19.Text + " " + CMBFK19.Text,
+                    CMBType20.Text + " " + TXB20.Text + " " + CMBNullable20.Text + " " + CMBFK20.Text);
                 CMBFK1.Items.Add(TXBPrimairyKey.Text);
                 CMBFK2.Items.Add(TXBPrimairyKey.Text);
                 CMBFK3.Items.Add(TXBPrimairyKey.Text);
