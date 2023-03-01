@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -10,11 +11,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ClassCreator
 {
     public partial class Form1 : Form
     {
+        int charCounter = 0;
+        string item1 = "";
+        string item2 = "";
+        string item3 = "";
+        string item4 = "";
+        string item5 = "";
+        string item6 = "";
+        string item7 = "";
+        string item8 = "";
+        string item9 = "";
+        string item10 = "";
+        string item11 = "";
+        string item12 = "";
+        string item13 = "";
+        string item14 = "";
+        string item15 = "";
+        string item16 = "";
+        string item17 = "";
+        string item18 = "";
+        string item19 = "";
+        string item20 = "";
 
         public Form1()
         {
@@ -225,175 +248,218 @@ namespace ClassCreator
             // ---------------------------------------------------------------
             // ---------------------------------------------------------------
             // filing the CMBTType comboboxes
-            CMBFK1.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK2.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            }; 
-            CMBFK3.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK4.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK5.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK6.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK7.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK8.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK9.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK10.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK11.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK12.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK13.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK14.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK15.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK16.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK17.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK18.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK19.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
-            CMBFK20.DataSource = new DataType[] {
-                new DataType{ Name = "" },
-                new DataType{ Name = "FK" },
-            };
+            CMBFK1.Items.Add("");
+            CMBFK2.Items.Add("");
+            CMBFK3.Items.Add("");
+            CMBFK4.Items.Add("");
+            CMBFK5.Items.Add("");
+            CMBFK6.Items.Add("");
+            CMBFK7.Items.Add("");
+            CMBFK8.Items.Add("");
+            CMBFK9.Items.Add("");
+            CMBFK10.Items.Add("");
+            CMBFK11.Items.Add("");
+            CMBFK12.Items.Add("");
+            CMBFK13.Items.Add("");
+            CMBFK14.Items.Add("");
+            CMBFK15.Items.Add("");
+            CMBFK16.Items.Add("");
+            CMBFK17.Items.Add("");
+            CMBFK18.Items.Add("");
+            CMBFK19.Items.Add("");
+            CMBFK20.Items.Add("");
             // ---------------------------------------------------------------
             // ---------------------------------------------------------------
-            
+            // filing the CMBTType comboboxes
+            CMBNullable1.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable2.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable3.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable4.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable5.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable6.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable7.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable8.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable9.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable10.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable11.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable12.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable13.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable14.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable15.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable16.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable17.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable18.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable19.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            CMBNullable20.DataSource = new DataType[] {
+                new DataType{ Name = "" },
+                new DataType{ Name = "Null" },
+            };
+            // ---------------------------------------------------------------
+            // ---------------------------------------------------------------  
         }
-
+        private void AddItem(object item, StreamWriter file)
+        {
+            // idea for a method came from Adam Grygoruk
+            // https://www.linkedin.com/in/adam-grygoruk-b60030265/
+            if (item.ToString().Contains("FK"))
+            {
+                file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 4) + " { get; set; }");
+            }
+            else if (item.ToString().Contains("Null"))
+            {
+                file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 4) + " { get; set; } = null;");
+            }
+            else if(item.ToString() != "  ")
+            {
+                file.WriteLine("public " + item + " { get; set; }");
+            }
+        }
+            
         private void button1_Click(object sender, EventArgs e)
         {
             File.Delete("downloads/createdClasses.cs");
-            using (StreamWriter file = new StreamWriter("downloads/createdClasses.cs"))
             {
-                foreach (DataGridViewRow row in dataGridView3.Rows)
-                {   
+                charCounter = 0;
+                using (StreamWriter file = new StreamWriter("downloads/createdClasses.cs"))
+                foreach (DataGridViewRow row in DGVClasses.Rows)
+                {
                     file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
-                    file.WriteLine("public " + row.Cells["Item1"].Value + " { get; set; }");
-                    if (row.Cells["Item2"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item2"].Value + " { get; set; }");
-                    if (row.Cells["Item3"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item3"].Value + " { get; set; }");
-                    if (row.Cells["Item4"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item4"].Value + " { get; set; }");
-                    if (row.Cells["Item5"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item5"].Value + " { get; set; }");
-                    if (row.Cells["Item6"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item6"].Value + " { get; set; }");
-                    if (row.Cells["Item7"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item7"].Value + " { get; set; }");
-                    if (row.Cells["Item8"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item8"].Value + " { get; set; }");
-                    if (row.Cells["Item9"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item9"].Value + " { get; set; }");
-                    if (row.Cells["Item10"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item10"].Value + " { get; set; }");
-                    if (row.Cells["Item11"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item11"].Value + " { get; set; }");
-                    if (row.Cells["Item12"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item12"].Value + " { get; set; }");
-                    if (row.Cells["Item13"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item13"].Value + " { get; set; }");
-                    if (row.Cells["Item14"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item14"].Value + " { get; set; }");
-                    if (row.Cells["Item15"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item15"].Value + " { get; set; }");
-                    if (row.Cells["Item16"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item16"].Value + " { get; set; }");
-                    if (row.Cells["Item17"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item17"].Value + " { get; set; }");
-                    if (row.Cells["Item18"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item18"].Value + " { get; set; }");
-                    if (row.Cells["Item19"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item19"].Value + " { get; set; }");
-                    if (row.Cells["Item20"].Value.ToString() != " ")
-                        file.WriteLine("public " + row.Cells["Item20"].Value + " { get; set; }");
+                    file.WriteLine("public int Id { get; set; }");
+                    
+                    AddItem(row.Cells["Item001"].Value, file);
+                    AddItem(row.Cells["Item002"].Value, file);
+                    AddItem(row.Cells["Item003"].Value, file);
+                    AddItem(row.Cells["Item004"].Value, file);
+                    AddItem(row.Cells["Item005"].Value, file);
+                    AddItem(row.Cells["Item006"].Value, file);
+                    AddItem(row.Cells["Item007"].Value, file);
+                    AddItem(row.Cells["Item008"].Value, file);
+                    AddItem(row.Cells["Item009"].Value, file);
+                    AddItem(row.Cells["Item010"].Value, file);
+                    AddItem(row.Cells["Item011"].Value, file);
+                    AddItem(row.Cells["Item012"].Value, file);
+                    AddItem(row.Cells["Item013"].Value, file);
+                    AddItem(row.Cells["Item014"].Value, file);
+                    AddItem(row.Cells["Item015"].Value, file);
+                    AddItem(row.Cells["Item016"].Value, file);
+                    AddItem(row.Cells["Item017"].Value, file);
+                    AddItem(row.Cells["Item018"].Value, file);
+                    AddItem(row.Cells["Item019"].Value, file);
+                    AddItem(row.Cells["Item020"].Value, file);
+
                     file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
                 }
             }
         }
-        int counter = 1;
         private void ClassCreator_Click(object sender, EventArgs e)
         {
             if (TXBPrimairyKey.Text != "" && CMBType1.Text != "")
             {
-                this.dataGridView3.Rows.Add(TXBPrimairyKey.Text,
-                    CMBType1.Text + " " + TXB1.Text,
-                    CMBType2.Text + " " + TXB2.Text,
-                    CMBType3.Text + " " + TXB3.Text,
-                    CMBType4.Text + " " + TXB4.Text,
-                    CMBType5.Text + " " + TXB5.Text,
-                    CMBType6.Text + " " + TXB6.Text,
-                    CMBType7.Text + " " + TXB7.Text,
-                    CMBType8.Text + " " + TXB8.Text, 
-                    CMBType9.Text + " " + TXB9.Text, 
-                    CMBType10.Text + " " + TXB10.Text, 
-                    CMBType11.Text + " " + TXB11.Text,
-                    CMBType12.Text + " " + TXB12.Text, 
-                    CMBType13.Text + " " + TXB13.Text, 
-                    CMBType14.Text + " " + TXB14.Text, 
-                    CMBType15.Text + " " + TXB15.Text, 
-                    CMBType16.Text + " " + TXB16.Text, 
-                    CMBType17.Text + " " + TXB17.Text, 
-                    CMBType18.Text + " " + TXB18.Text, 
-                    CMBType19.Text + " " + TXB19.Text,
-                    CMBType20.Text + " " + TXB20.Text);
-                dataGridView3.Update();
-                dataGridView3.Refresh();
-                counter++;
+                Console.WriteLine(CMBType1.Text + " " + TXB1.Text + " " + CMBNullable1.Text);
+                this.DGVClasses.Rows.Add(TXBPrimairyKey.Text,
+                    CMBType1.Text + " " + TXB1.Text + " " + CMBNullable1.Text,
+                    CMBType2.Text + " " + TXB2.Text + " " + CMBNullable2.Text,
+                    CMBType3.Text + " " + TXB3.Text + " " + CMBNullable3.Text,
+                    CMBType4.Text + " " + TXB4.Text + " " + CMBNullable4.Text,
+                    CMBType5.Text + " " + TXB5.Text + " " + CMBNullable5.Text,
+                    CMBType6.Text + " " + TXB6.Text + " " + CMBNullable6.Text,
+                    CMBType7.Text + " " + TXB7.Text + " " + CMBNullable7.Text,
+                    CMBType8.Text + " " + TXB8.Text + " " + CMBNullable8.Text, 
+                    CMBType9.Text + " " + TXB9.Text + " " + CMBNullable9.Text, 
+                    CMBType10.Text + " " + TXB10.Text + " " + CMBNullable10.Text, 
+                    CMBType11.Text + " " + TXB11.Text + " " + CMBNullable11.Text,
+                    CMBType12.Text + " " + TXB12.Text + " " + CMBNullable12.Text, 
+                    CMBType13.Text + " " + TXB13.Text + " " + CMBNullable13.Text, 
+                    CMBType14.Text + " " + TXB14.Text + " " + CMBNullable14.Text, 
+                    CMBType15.Text + " " + TXB15.Text + " " + CMBNullable15.Text, 
+                    CMBType16.Text + " " + TXB16.Text + " " + CMBNullable16.Text, 
+                    CMBType17.Text + " " + TXB17.Text + " " + CMBNullable17.Text, 
+                    CMBType18.Text + " " + TXB18.Text + " " + CMBNullable18.Text, 
+                    CMBType19.Text + " " + TXB19.Text + " " + CMBNullable19.Text,
+                    CMBType20.Text + " " + TXB20.Text + " " + CMBNullable20.Text);
+                CMBFK1.Items.Add(TXBPrimairyKey.Text);
+                CMBFK2.Items.Add(TXBPrimairyKey.Text);
+                CMBFK3.Items.Add(TXBPrimairyKey.Text);
+                CMBFK4.Items.Add(TXBPrimairyKey.Text);
+                CMBFK5.Items.Add(TXBPrimairyKey.Text);
+                CMBFK6.Items.Add(TXBPrimairyKey.Text);
+                CMBFK7.Items.Add(TXBPrimairyKey.Text);
+                CMBFK8.Items.Add(TXBPrimairyKey.Text);
+                CMBFK9.Items.Add(TXBPrimairyKey.Text);
+                CMBFK10.Items.Add(TXBPrimairyKey.Text);
+                CMBFK11.Items.Add(TXBPrimairyKey.Text);
+                CMBFK12.Items.Add(TXBPrimairyKey.Text);
+                CMBFK13.Items.Add(TXBPrimairyKey.Text);
+                CMBFK14.Items.Add(TXBPrimairyKey.Text);
+                CMBFK15.Items.Add(TXBPrimairyKey.Text);
+                CMBFK16.Items.Add(TXBPrimairyKey.Text);
+                CMBFK17.Items.Add(TXBPrimairyKey.Text);
+                CMBFK18.Items.Add(TXBPrimairyKey.Text);
+                CMBFK19.Items.Add(TXBPrimairyKey.Text);
+                CMBFK20.Items.Add(TXBPrimairyKey.Text);
+                DGVClasses.Update();
+                DGVClasses.Refresh();
             }
             else 
             {
-                MessageBox.Show("please give a value to the first and second textboxes");
+                MessageBox.Show("please give a value to the first and second textbox");
             }
         }
         public class DataType
