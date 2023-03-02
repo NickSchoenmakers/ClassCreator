@@ -18,26 +18,6 @@ namespace ClassCreator
     public partial class Form1 : Form
     {
         int charCounter = 0;
-        string item1 = "";
-        string item2 = "";
-        string item3 = "";
-        string item4 = "";
-        string item5 = "";
-        string item6 = "";
-        string item7 = "";
-        string item8 = "";
-        string item9 = "";
-        string item10 = "";
-        string item11 = "";
-        string item12 = "";
-        string item13 = "";
-        string item14 = "";
-        string item15 = "";
-        string item16 = "";
-        string item17 = "";
-        string item18 = "";
-        string item19 = "";
-        string item20 = "";
 
         public Form1()
         {
@@ -248,7 +228,7 @@ namespace ClassCreator
             // ---------------------------------------------------------------
             // ---------------------------------------------------------------
             // filing the CMBTType comboboxes
-            CMBFK1.Items.Add("lokjhgfds");
+            CMBFK1.Items.Add("");
             CMBFK2.Items.Add("");
             CMBFK3.Items.Add("");
             CMBFK4.Items.Add("");
@@ -266,8 +246,8 @@ namespace ClassCreator
             CMBFK16.Items.Add("");
             CMBFK17.Items.Add("");
             CMBFK18.Items.Add("");
-            CMBFK19.Items.Add("1");
-            CMBFK20.Items.Add("1");
+            CMBFK19.Items.Add("");
+            CMBFK20.Items.Add("");
             // ---------------------------------------------------------------
             // ---------------------------------------------------------------
             // filing the CMBTType comboboxes
@@ -355,27 +335,26 @@ namespace ClassCreator
             // ---------------------------------------------------------------  
         }
         int stuff = 0;
-        private void AddItem(object item, StreamWriter file, int FKLengthv2)
+        private void AddItem(object item, StreamWriter file)
         {
+            Console.WriteLine(item);
             // idea for a method came from Adam Grygoruk
             // https://www.linkedin.com/in/adam-grygoruk-b60030265/
             string[] words = item.ToString().Split(' ');
-            if (stuff == 0)
+            if (words[3].Length != 0)
             {
-                Console.WriteLine(item.ToString().Remove(item.ToString().Length - 5) + "fk");
-                file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 5) + " { get; set; } = fk;");
+                file.WriteLine("public ObservableCollectionListSource<" + words[1] + "> " + words[1] + " { get; } = new ObservableCollectionListSource<" + words[1] + ">();");
             }
             else if (item.ToString().Contains("Null"))
             {
                 Console.WriteLine("gadihjasgbgewbg");
                 file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 5) + " { get; set; } = null;");
             }
-            else if(item.ToString() != "  ")
+            else if(item.ToString() != "   ")
             {
-                file.WriteLine("public " + item + " { get; set; }");
+                file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 2) + " { get; set; }");
             }
         }
-
         int FKLengthv2 = 0;
         private void button1_Click(object sender, EventArgs e)
         {
@@ -387,36 +366,27 @@ namespace ClassCreator
                 {
                     file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
                     file.WriteLine("public int Id { get; set; }");
-                    string[] words = row.Cells["Item001"].Value.ToString().Split(' ');
-                    if (words[3].Length != 0)
-                    {
-                        FKLengthv2 = words[3].ToString().Length;
-                    }
-                    else 
-                    {
-                        FKLengthv2 = 0;
-                    }
                     
-                    AddItem(row.Cells["Item001"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item002"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item003"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item004"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item005"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item006"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item007"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item008"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item009"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item010"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item011"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item012"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item013"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item014"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item015"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item016"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item017"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item018"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item019"].Value, file, FKLengthv2);
-                    AddItem(row.Cells["Item020"].Value, file, FKLengthv2);
+                    AddItem(row.Cells["Item001"].Value, file);
+                    AddItem(row.Cells["Item002"].Value, file);
+                    AddItem(row.Cells["Item003"].Value, file);
+                    AddItem(row.Cells["Item004"].Value, file);
+                    AddItem(row.Cells["Item005"].Value, file);
+                    AddItem(row.Cells["Item006"].Value, file);
+                    AddItem(row.Cells["Item007"].Value, file);
+                    AddItem(row.Cells["Item008"].Value, file);
+                    AddItem(row.Cells["Item009"].Value, file);
+                    AddItem(row.Cells["Item010"].Value, file);
+                    AddItem(row.Cells["Item011"].Value, file);
+                    AddItem(row.Cells["Item012"].Value, file);
+                    AddItem(row.Cells["Item013"].Value, file);
+                    AddItem(row.Cells["Item014"].Value, file);
+                    AddItem(row.Cells["Item015"].Value, file);
+                    AddItem(row.Cells["Item016"].Value, file);
+                    AddItem(row.Cells["Item017"].Value, file);
+                    AddItem(row.Cells["Item018"].Value, file);
+                    AddItem(row.Cells["Item019"].Value, file);
+                    AddItem(row.Cells["Item020"].Value, file);
 
                     file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
                 }
