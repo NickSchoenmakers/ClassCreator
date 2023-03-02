@@ -257,6 +257,7 @@
             this.CMBFK1.Name = "CMBFK1";
             this.CMBFK1.Size = new System.Drawing.Size(45, 21);
             this.CMBFK1.TabIndex = 100;
+            this.CMBFK1.SelectedValueChanged += new System.EventHandler(this.CMBFK1_SelectedValueChanged);
             // 
             // CMBFK2
             // 
@@ -265,6 +266,7 @@
             this.CMBFK2.Name = "CMBFK2";
             this.CMBFK2.Size = new System.Drawing.Size(45, 21);
             this.CMBFK2.TabIndex = 100;
+            this.CMBFK2.SelectedValueChanged += new System.EventHandler(this.CMBFK2_SelectedValueChanged);
             // 
             // CMBFK3
             // 
@@ -273,6 +275,7 @@
             this.CMBFK3.Name = "CMBFK3";
             this.CMBFK3.Size = new System.Drawing.Size(45, 21);
             this.CMBFK3.TabIndex = 100;
+            this.CMBFK3.SelectedValueChanged += new System.EventHandler(this.CMBFK3_SelectedValueChanged);
             // 
             // CMBFK4
             // 
@@ -281,6 +284,7 @@
             this.CMBFK4.Name = "CMBFK4";
             this.CMBFK4.Size = new System.Drawing.Size(45, 21);
             this.CMBFK4.TabIndex = 100;
+            this.CMBFK4.SelectedValueChanged += new System.EventHandler(this.CMBFK4_SelectedValueChanged);
             // 
             // CMBFK5
             // 
@@ -289,6 +293,7 @@
             this.CMBFK5.Name = "CMBFK5";
             this.CMBFK5.Size = new System.Drawing.Size(45, 21);
             this.CMBFK5.TabIndex = 100;
+            this.CMBFK5.SelectedValueChanged += new System.EventHandler(this.CMBFK5_SelectedValueChanged);
             // 
             // CMBFK6
             // 
@@ -297,6 +302,7 @@
             this.CMBFK6.Name = "CMBFK6";
             this.CMBFK6.Size = new System.Drawing.Size(45, 21);
             this.CMBFK6.TabIndex = 100;
+            this.CMBFK6.SelectedValueChanged += new System.EventHandler(this.CMBFK6_SelectedValueChanged);
             // 
             // CMBFK7
             // 
@@ -305,6 +311,7 @@
             this.CMBFK7.Name = "CMBFK7";
             this.CMBFK7.Size = new System.Drawing.Size(45, 21);
             this.CMBFK7.TabIndex = 100;
+            this.CMBFK7.SelectedValueChanged += new System.EventHandler(this.CMBFK7_SelectedValueChanged);
             // 
             // CMBFK8
             // 
@@ -313,6 +320,7 @@
             this.CMBFK8.Name = "CMBFK8";
             this.CMBFK8.Size = new System.Drawing.Size(45, 21);
             this.CMBFK8.TabIndex = 100;
+            this.CMBFK8.SelectedValueChanged += new System.EventHandler(this.CMBFK8_SelectedValueChanged);
             // 
             // CMBFK9
             // 
@@ -321,6 +329,7 @@
             this.CMBFK9.Name = "CMBFK9";
             this.CMBFK9.Size = new System.Drawing.Size(45, 21);
             this.CMBFK9.TabIndex = 100;
+            this.CMBFK9.SelectedValueChanged += new System.EventHandler(this.CMBFK9_SelectedValueChanged);
             // 
             // CMBFK10
             // 
@@ -329,6 +338,7 @@
             this.CMBFK10.Name = "CMBFK10";
             this.CMBFK10.Size = new System.Drawing.Size(45, 21);
             this.CMBFK10.TabIndex = 100;
+            this.CMBFK10.SelectedValueChanged += new System.EventHandler(this.CMBFK10_SelectedValueChanged);
             // 
             // CMBFK11
             // 
@@ -337,6 +347,7 @@
             this.CMBFK11.Name = "CMBFK11";
             this.CMBFK11.Size = new System.Drawing.Size(45, 21);
             this.CMBFK11.TabIndex = 100;
+            this.CMBFK11.SelectedValueChanged += new System.EventHandler(this.CMBFK11_SelectedValueChanged);
             // 
             // CMBFK12
             // 
@@ -345,6 +356,7 @@
             this.CMBFK12.Name = "CMBFK12";
             this.CMBFK12.Size = new System.Drawing.Size(45, 21);
             this.CMBFK12.TabIndex = 100;
+            this.CMBFK12.SelectedValueChanged += new System.EventHandler(this.CMBFK12_SelectedValueChanged);
             // 
             // CMBFK13
             // 
@@ -353,6 +365,7 @@
             this.CMBFK13.Name = "CMBFK13";
             this.CMBFK13.Size = new System.Drawing.Size(45, 21);
             this.CMBFK13.TabIndex = 100;
+            this.CMBFK13.SelectedValueChanged += new System.EventHandler(this.CMBFK13_SelectedValueChanged);
             // 
             // CMBType1
             // 
@@ -570,6 +583,7 @@
             this.CMBFK14.Name = "CMBFK14";
             this.CMBFK14.Size = new System.Drawing.Size(45, 21);
             this.CMBFK14.TabIndex = 100;
+            this.CMBFK14.SelectedValueChanged += new System.EventHandler(this.CMBFK14_SelectedValueChanged);
             // 
             // CMBFK15
             // 
@@ -578,6 +592,7 @@
             this.CMBFK15.Name = "CMBFK15";
             this.CMBFK15.Size = new System.Drawing.Size(45, 21);
             this.CMBFK15.TabIndex = 100;
+            this.CMBFK15.SelectedValueChanged += new System.EventHandler(this.CMBFK15_SelectedValueChanged);
             // 
             // CMBFK16
             // 
@@ -586,6 +601,7 @@
             this.CMBFK16.Name = "CMBFK16";
             this.CMBFK16.Size = new System.Drawing.Size(45, 21);
             this.CMBFK16.TabIndex = 100;
+            this.CMBFK16.SelectedValueChanged += new System.EventHandler(this.CMBFK16_SelectedValueChanged);
             // 
             // CMBFK17
             // 
@@ -594,6 +610,7 @@
             this.CMBFK17.Name = "CMBFK17";
             this.CMBFK17.Size = new System.Drawing.Size(45, 21);
             this.CMBFK17.TabIndex = 100;
+            this.CMBFK17.SelectedValueChanged += new System.EventHandler(this.CMBFK17_SelectedValueChanged);
             // 
             // CMBFK18
             // 
@@ -602,6 +619,7 @@
             this.CMBFK18.Name = "CMBFK18";
             this.CMBFK18.Size = new System.Drawing.Size(45, 21);
             this.CMBFK18.TabIndex = 100;
+            this.CMBFK18.SelectedValueChanged += new System.EventHandler(this.CMBFK18_SelectedValueChanged);
             // 
             // CMBFK19
             // 
@@ -610,6 +628,7 @@
             this.CMBFK19.Name = "CMBFK19";
             this.CMBFK19.Size = new System.Drawing.Size(45, 21);
             this.CMBFK19.TabIndex = 100;
+            this.CMBFK19.SelectedValueChanged += new System.EventHandler(this.CMBFK19_SelectedValueChanged);
             // 
             // CMBFK20
             // 
@@ -618,6 +637,7 @@
             this.CMBFK20.Name = "CMBFK20";
             this.CMBFK20.Size = new System.Drawing.Size(45, 21);
             this.CMBFK20.TabIndex = 100;
+            this.CMBFK20.SelectedValueChanged += new System.EventHandler(this.CMBFK20_SelectedValueChanged);
             // 
             // label1
             // 
@@ -1071,7 +1091,7 @@
             this.Controls.Add(this.TXB12);
             this.Controls.Add(this.TXB13);
             this.Controls.Add(this.button1);
-            this.Text = "Form1";
+            this.Text = "ClassCreator";
             ((System.ComponentModel.ISupportInitialize)(this.DGVClasses)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -461,5 +461,145 @@ namespace ClassCreator
                 return "FK";
             }
         }
+
+        private void CMBFK1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType1.Text = "FK";
+            TXB1.Text = CMBFK1.Text;
+            CMBNullable1.Text = "";
+        }
+
+        private void CMBFK2_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType2.Text = "FK";
+            TXB2.Text = CMBFK2.Text;
+            CMBNullable2.Text = "";
+        }
+
+        private void CMBFK3_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType3.Text = "FK";
+            TXB3.Text = CMBFK3.Text;
+            CMBNullable3.Text = "";
+        }
+
+        private void CMBFK4_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType4.Text = "FK";
+            TXB4.Text = CMBFK4.Text;
+            CMBNullable4.Text = "";
+        }
+
+        private void CMBFK5_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType5.Text = "FK";
+            TXB5.Text = CMBFK5.Text;
+            CMBNullable5.Text = "";
+        }
+
+        private void CMBFK6_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType6.Text = "FK";
+            TXB6.Text = CMBFK6.Text;
+            CMBNullable6.Text = "";
+        }
+
+        private void CMBFK7_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType7.Text = "FK";
+            TXB7.Text = CMBFK7.Text;
+            CMBNullable7.Text = "";
+        }
+
+        private void CMBFK8_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType8.Text = "FK";
+            TXB8.Text = CMBFK8.Text;
+            CMBNullable8.Text = "";
+        }
+
+        private void CMBFK9_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType9.Text = "FK";
+            TXB9.Text = CMBFK9.Text;
+            CMBNullable9.Text = "";
+        }
+
+        private void CMBFK10_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType10.Text = "FK";
+            TXB10.Text = CMBFK10.Text;
+            CMBNullable10.Text = "";
+        }
+
+        private void CMBFK11_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType11.Text = "FK";
+            TXB11.Text = CMBFK11.Text;
+            CMBNullable11.Text = "";
+        }
+
+        private void CMBFK12_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType12.Text = "FK";
+            TXB12.Text = CMBFK12.Text;
+            CMBNullable12.Text = "";
+        }
+
+        private void CMBFK13_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType13.Text = "FK";
+            TXB13.Text = CMBFK13.Text;
+            CMBNullable13.Text = "";
+        }
+
+        private void CMBFK14_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType14.Text = "FK";
+            TXB14.Text = CMBFK14.Text;
+            CMBNullable14.Text = "";
+        }
+
+        private void CMBFK15_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType15.Text = "FK";
+            TXB15.Text = CMBFK15.Text;
+            CMBNullable15.Text = "";
+        }
+
+        private void CMBFK16_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType16.Text = "FK";
+            TXB16.Text = CMBFK16.Text;
+            CMBNullable16.Text = "";
+        }
+
+        private void CMBFK17_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType17.Text = "FK";
+            TXB17.Text = CMBFK17.Text;
+            CMBNullable17.Text = "";
+        }
+
+        private void CMBFK18_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType18.Text = "FK";
+            TXB18.Text = CMBFK18.Text;
+            CMBNullable18.Text = "";
+        }
+
+        private void CMBFK19_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType19.Text = "FK";
+            TXB19.Text = CMBFK19.Text;
+            CMBNullable19.Text = "";
+        }
+
+        private void CMBFK20_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CMBType20.Text = "FK";
+            TXB20.Text = CMBFK20.Text;
+            CMBNullable20.Text = "";
+        }
     }
 }
