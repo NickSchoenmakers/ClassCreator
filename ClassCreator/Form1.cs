@@ -332,12 +332,10 @@ namespace ClassCreator
                 new DataType{ Name = "Null" },
             };
             // ---------------------------------------------------------------
-            // ---------------------------------------------------------------  
+            // ---------------------------------------------------------------
         }
-        int stuff = 0;
         private void AddItem(object item, StreamWriter file)
         {
-            Console.WriteLine(item);
             // idea for a method came from Adam Grygoruk
             // https://www.linkedin.com/in/adam-grygoruk-b60030265/
             string[] words = item.ToString().Split(' ');
@@ -350,7 +348,7 @@ namespace ClassCreator
                 Console.WriteLine("gadihjasgbgewbg");
                 file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 5) + " { get; set; } = null;");
             }
-            else if(item.ToString() != "   ")
+            else if (item.ToString() != "   ")
             {
                 file.WriteLine("public " + item.ToString().Remove(item.ToString().Length - 2) + " { get; set; }");
             }
@@ -394,7 +392,7 @@ namespace ClassCreator
         }
         private void ClassCreator_Click(object sender, EventArgs e)
         {
-            if (TXBPrimairyKey.Text != "" && CMBType1.Text != "")
+            if (TXBPrimairyKey.Text != "" && TXB1.Text != "")
             {
                 this.DGVClasses.Rows.Add(TXBPrimairyKey.Text,
                     CMBType1.Text + " " + TXB1.Text + " " + CMBNullable1.Text + " " + CMBFK1.Text,
@@ -464,142 +462,402 @@ namespace ClassCreator
 
         private void CMBFK1_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType1.Text = "FK";
-            TXB1.Text = CMBFK1.Text;
-            CMBNullable1.Text = "";
+            if (CMBFK1.Text == "")
+            {
+                CMBType1.Text = "";
+                TXB1.ReadOnly = false;
+                CMBNullable1.Enabled = true;
+                CMBType1.Enabled = true;
+            }
+            else
+            {
+                CMBType1.Text = "FK";
+                TXB1.Text = CMBFK1.Text;
+                CMBNullable1.Text = "";
+                TXB1.ReadOnly = true;
+                CMBNullable1.Enabled = false;
+                CMBType1.Enabled = false;
+            }
         }
 
         private void CMBFK2_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType2.Text = "FK";
-            TXB2.Text = CMBFK2.Text;
-            CMBNullable2.Text = "";
+            if (CMBFK2.Text == "")
+            {
+                CMBType2.Text = "";
+                TXB2.ReadOnly = false;
+                CMBNullable2.Enabled = true;
+                CMBType2.Enabled = true;
+            }
+            else
+            {
+                CMBType2.Text = "FK";
+                TXB2.Text = CMBFK2.Text;
+                CMBNullable2.Text = "";
+                TXB2.ReadOnly = true;
+                CMBNullable2.Enabled = false;
+                CMBType2.Enabled = false;
+            }
         }
 
         private void CMBFK3_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType3.Text = "FK";
-            TXB3.Text = CMBFK3.Text;
-            CMBNullable3.Text = "";
+            if (CMBFK3.Text == "")
+            {
+                CMBType3.Text = "";
+                TXB3.ReadOnly = false;
+                CMBNullable3.Enabled = true;
+                CMBType3.Enabled = true;
+            }
+            else
+            {
+                CMBType3.Text = "FK";
+                TXB3.Text = CMBFK3.Text;
+                CMBNullable3.Text = "";
+                TXB3.ReadOnly = true;
+                CMBNullable3.Enabled = false;
+                CMBType3.Enabled = false;
+            }
         }
 
         private void CMBFK4_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType4.Text = "FK";
-            TXB4.Text = CMBFK4.Text;
-            CMBNullable4.Text = "";
+            if (CMBFK4.Text == "")
+            {
+                CMBType4.Text = "";
+                TXB4.ReadOnly = false;
+                CMBNullable4.Enabled = true;
+                CMBType4.Enabled = true;
+            }
+            else
+            {
+                CMBType4.Text = "FK";
+                TXB4.Text = CMBFK4.Text;
+                CMBNullable4.Text = "";
+                TXB4.ReadOnly = true;
+                CMBNullable4.Enabled = false;
+                CMBType4.Enabled = false;
+            }
         }
 
         private void CMBFK5_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType5.Text = "FK";
-            TXB5.Text = CMBFK5.Text;
-            CMBNullable5.Text = "";
+            if (CMBFK5.Text == "")
+            {
+                CMBType5.Text = "";
+                TXB5.ReadOnly = false;
+                CMBNullable5.Enabled = true;
+                CMBType5.Enabled = true;
+            }
+            else
+            {
+                CMBType5.Text = "FK";
+                TXB5.Text = CMBFK5.Text;
+                CMBNullable5.Text = "";
+                TXB5.ReadOnly = true;
+                CMBNullable5.Enabled = false;
+                CMBType5.Enabled = false;
+            }
         }
 
         private void CMBFK6_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType6.Text = "FK";
-            TXB6.Text = CMBFK6.Text;
-            CMBNullable6.Text = "";
+            if (CMBFK6.Text == "")
+            {
+                CMBType6.Text = "";
+                TXB6.ReadOnly = false;
+                CMBNullable6.Enabled = true;
+                CMBType6.Enabled = true;
+            }
+            else
+            {
+                CMBType6.Text = "FK";
+                TXB6.Text = CMBFK6.Text;
+                CMBNullable6.Text = "";
+                TXB6.ReadOnly = true;
+                CMBNullable6.Enabled = false;
+                CMBType6.Enabled = false;
+            }
         }
 
         private void CMBFK7_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType7.Text = "FK";
-            TXB7.Text = CMBFK7.Text;
-            CMBNullable7.Text = "";
+            if (CMBFK7.Text == "")
+            {
+                CMBType7.Text = "";
+                TXB7.ReadOnly = false;
+                CMBNullable7.Enabled = true;
+                CMBType7.Enabled = true;
+            }
+            else
+            {
+                CMBType7.Text = "FK";
+                TXB7.Text = CMBFK7.Text;
+                CMBNullable7.Text = "";
+                TXB7.ReadOnly = true;
+                CMBNullable7.Enabled = false;
+                CMBType7.Enabled = false;
+            }
         }
 
         private void CMBFK8_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType8.Text = "FK";
-            TXB8.Text = CMBFK8.Text;
-            CMBNullable8.Text = "";
+            if (CMBFK8.Text == "")
+            {
+                CMBType8.Text = "";
+                TXB8.ReadOnly = false;
+                CMBNullable8.Enabled = true;
+                CMBType8.Enabled = true;
+            }
+            else
+            {
+                CMBType8.Text = "FK";
+                TXB8.Text = CMBFK8.Text;
+                CMBNullable8.Text = "";
+                TXB8.ReadOnly = true;
+                CMBNullable8.Enabled = false;
+                CMBType8.Enabled = false;
+            }
         }
 
         private void CMBFK9_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType9.Text = "FK";
-            TXB9.Text = CMBFK9.Text;
-            CMBNullable9.Text = "";
+            if (CMBFK9.Text == "")
+            {
+                CMBType9.Text = "";
+                TXB9.ReadOnly = false;
+                CMBNullable9.Enabled = true;
+                CMBType9.Enabled = true;
+            }
+            else
+            {
+                CMBType9.Text = "FK";
+                TXB9.Text = CMBFK9.Text;
+                CMBNullable9.Text = "";
+                TXB9.ReadOnly = true;
+                CMBNullable9.Enabled = false;
+                CMBType9.Enabled = false;
+            }
         }
 
         private void CMBFK10_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType10.Text = "FK";
-            TXB10.Text = CMBFK10.Text;
-            CMBNullable10.Text = "";
+            if (CMBFK10.Text == "")
+            {
+                CMBType10.Text = "";
+                TXB10.ReadOnly = false;
+                CMBNullable10.Enabled = true;
+                CMBType10.Enabled = true;
+            }
+            else
+            {
+                CMBType10.Text = "FK";
+                TXB10.Text = CMBFK10.Text;
+                CMBNullable10.Text = "";
+                TXB10.ReadOnly = true;
+                CMBNullable10.Enabled = false;
+                CMBType10.Enabled = false;
+            }
         }
 
         private void CMBFK11_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType11.Text = "FK";
-            TXB11.Text = CMBFK11.Text;
-            CMBNullable11.Text = "";
+            if (CMBFK11.Text == "")
+            {
+                CMBType11.Text = "";
+                TXB11.ReadOnly = false;
+                CMBNullable11.Enabled = true;
+                CMBType11.Enabled = true;
+            }
+            else
+            {
+                CMBType11.Text = "FK";
+                TXB11.Text = CMBFK11.Text;
+                CMBNullable11.Text = "";
+                TXB11.ReadOnly = true;
+                CMBNullable11.Enabled = false;
+                CMBType11.Enabled = false;
+            }
         }
 
         private void CMBFK12_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType12.Text = "FK";
-            TXB12.Text = CMBFK12.Text;
-            CMBNullable12.Text = "";
+            if (CMBFK12.Text == "")
+            {
+                CMBType12.Text = "";
+                TXB12.ReadOnly = false;
+                CMBNullable12.Enabled = true;
+                CMBType12.Enabled = true;
+            }
+            else
+            {
+                CMBType12.Text = "FK";
+                TXB12.Text = CMBFK12.Text;
+                CMBNullable12.Text = "";
+                TXB12.ReadOnly = true;
+                CMBNullable12.Enabled = false;
+                CMBType12.Enabled = false;
+            }
         }
 
         private void CMBFK13_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType13.Text = "FK";
-            TXB13.Text = CMBFK13.Text;
-            CMBNullable13.Text = "";
+            if (CMBFK13.Text == "")
+            {
+                CMBType13.Text = "";
+                TXB13.ReadOnly = false;
+                CMBNullable13.Enabled = true;
+                CMBType13.Enabled = true;
+            }
+            else
+            {
+                CMBType13.Text = "FK";
+                TXB13.Text = CMBFK13.Text;
+                CMBNullable13.Text = "";
+                TXB13.ReadOnly = true;
+                CMBNullable13.Enabled = false;
+                CMBType13.Enabled = false;
+            }
         }
 
         private void CMBFK14_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType14.Text = "FK";
-            TXB14.Text = CMBFK14.Text;
-            CMBNullable14.Text = "";
+            if (CMBFK14.Text == "")
+            {
+                CMBType14.Text = "";
+                TXB14.ReadOnly = false;
+                CMBNullable14.Enabled = true;
+                CMBType14.Enabled = true;
+            }
+            else
+            {
+                CMBType14.Text = "FK";
+                TXB14.Text = CMBFK14.Text;
+                CMBNullable14.Text = "";
+                TXB14.ReadOnly = true;
+                CMBNullable14.Enabled = false;
+                CMBType14.Enabled = false;
+            }
         }
 
         private void CMBFK15_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType15.Text = "FK";
-            TXB15.Text = CMBFK15.Text;
-            CMBNullable15.Text = "";
+            if (CMBFK15.Text == "")
+            {
+                CMBType15.Text = "";
+                TXB15.ReadOnly = false;
+                CMBNullable15.Enabled = true;
+                CMBType15.Enabled = true;
+            }
+            else
+            {
+                CMBType15.Text = "FK";
+                TXB15.Text = CMBFK15.Text;
+                CMBNullable15.Text = "";
+                TXB15.ReadOnly = true;
+                CMBNullable15.Enabled = false;
+                CMBType15.Enabled = false;
+            }
         }
 
         private void CMBFK16_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType16.Text = "FK";
-            TXB16.Text = CMBFK16.Text;
-            CMBNullable16.Text = "";
+            if (CMBFK16.Text == "")
+            {
+                CMBType16.Text = "";
+                TXB16.ReadOnly = false;
+                CMBNullable16.Enabled = true;
+                CMBType16.Enabled = true;
+            }
+            else
+            {
+                CMBType16.Text = "FK";
+                TXB16.Text = CMBFK16.Text;
+                CMBNullable16.Text = "";
+                TXB16.ReadOnly = true;
+                CMBNullable16.Enabled = false;
+                CMBType16.Enabled = false;
+            }
         }
 
         private void CMBFK17_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType17.Text = "FK";
-            TXB17.Text = CMBFK17.Text;
-            CMBNullable17.Text = "";
+            if (CMBFK17.Text == "")
+            {
+                CMBType17.Text = "";
+                TXB17.ReadOnly = false;
+                CMBNullable17.Enabled = true;
+                CMBType17.Enabled = true;
+            }
+            else
+            {
+                CMBType17.Text = "FK";
+                TXB17.Text = CMBFK17.Text;
+                CMBNullable17.Text = "";
+                TXB17.ReadOnly = true;
+                CMBNullable17.Enabled = false;
+                CMBType17.Enabled = false;
+            }
         }
 
         private void CMBFK18_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType18.Text = "FK";
-            TXB18.Text = CMBFK18.Text;
-            CMBNullable18.Text = "";
+            if (CMBFK18.Text == "")
+            {
+                CMBType18.Text = "";
+                TXB18.ReadOnly = false;
+                CMBNullable18.Enabled = true;
+                CMBType18.Enabled = true;
+            }
+            else
+            {
+                CMBType18.Text = "FK";
+                TXB18.Text = CMBFK18.Text;
+                CMBNullable18.Text = "";
+                TXB18.ReadOnly = true;
+                CMBNullable18.Enabled = false;
+                CMBType18.Enabled = false;
+            }
         }
 
         private void CMBFK19_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType19.Text = "FK";
-            TXB19.Text = CMBFK19.Text;
-            CMBNullable19.Text = "";
+            if (CMBFK19.Text == "")
+            {
+                CMBType19.Text = "";
+                TXB19.ReadOnly = false;
+                CMBNullable19.Enabled = true;
+                CMBType19.Enabled = true;
+            }
+            else
+            {
+                CMBType19.Text = "FK";
+                TXB19.Text = CMBFK19.Text;
+                CMBNullable19.Text = "";
+                TXB19.ReadOnly = true;
+                CMBNullable19.Enabled = false;
+                CMBType19.Enabled = false;
+            }
         }
 
         private void CMBFK20_SelectedValueChanged(object sender, EventArgs e)
         {
-            CMBType20.Text = "FK";
-            TXB20.Text = CMBFK20.Text;
-            CMBNullable20.Text = "";
+            if (CMBFK20.Text == "")
+            {
+                CMBType20.Text = "";
+                TXB20.ReadOnly = false;
+                CMBNullable20.Enabled = true;
+                CMBType20.Enabled = true;
+            }
+            else
+            {
+                CMBType20.Text = "FK";
+                TXB20.Text = CMBFK20.Text;
+                CMBNullable20.Text = "";
+                TXB20.ReadOnly = true;
+                CMBNullable20.Enabled = false;
+                CMBType20.Enabled = false;
+            }
         }
     }
 }
