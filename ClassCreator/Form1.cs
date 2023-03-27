@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -356,10 +357,10 @@ namespace ClassCreator
         int FKLengthv2 = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            File.Delete("downloads/createdClasses.cs");
+            File.Delete("Downloads\\createdClasses.cs");
             {
                 charCounter = 0;
-                using (StreamWriter file = new StreamWriter("downloads/createdClasses.cs"))
+                using (StreamWriter file = new StreamWriter("Downloads\\createdClasses.cs"))
                 foreach (DataGridViewRow row in DGVClasses.Rows)
                 {
                     file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
@@ -388,6 +389,7 @@ namespace ClassCreator
 
                     file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
                 }
+                Process.Start("Downloads\\createdClasses.cs");
             }
         }
         private void ClassCreator_Click(object sender, EventArgs e)

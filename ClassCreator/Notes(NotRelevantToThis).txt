@@ -1,0 +1,5 @@
+﻿using microsoft.EntityFrameworkCore;
+:Dbcontext
+public Dbset<>
+load -> bindinglist and datasource
+ToString in de stuurende method voor FK's
