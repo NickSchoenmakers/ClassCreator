@@ -337,8 +337,6 @@ namespace ClassCreator
         }
         private void AddItem(object item, StreamWriter file)
         {
-            // idea for a method came from Adam Grygoruk
-            // https://www.linkedin.com/in/adam-grygoruk-b60030265/
             string[] words = item.ToString().Split(' ');
             if (words[3].Length != 0)
             {
@@ -357,10 +355,13 @@ namespace ClassCreator
         int FKLengthv2 = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            File.Delete("Downloads\\createdClasses.cs");
+            try
+            {
+                File.Delete("createdClasses.cs");
+            } catch { }
             {
                 charCounter = 0;
-                using (StreamWriter file = new StreamWriter("Downloads\\createdClasses.cs"))
+                using (StreamWriter file = new StreamWriter("createdClasses.cs"))
                 foreach (DataGridViewRow row in DGVClasses.Rows)
                 {
                     file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
@@ -389,7 +390,7 @@ namespace ClassCreator
 
                     file.WriteLine("// ---------------------------------------------------------------\r\n// ---------------------------------------------------------------");
                 }
-                Process.Start("Downloads\\createdClasses.cs");
+                Process.Start("createdClasses.cs");
             }
         }
         private void ClassCreator_Click(object sender, EventArgs e)
